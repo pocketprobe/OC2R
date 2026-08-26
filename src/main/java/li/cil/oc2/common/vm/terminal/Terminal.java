@@ -45,7 +45,7 @@ public class Terminal {
             foregroundColor;
     public byte style;
 
-    public int SCROLL_BACK_COUNT = 20;
+    public static final int SCROLL_BACK_COUNT = 20;
     public transient ByteArrayFIFOQueue input = new ByteArrayFIFOQueue(32);
     // DECCOLM dynamic width; setWidth reallocates buffers. Transient: re-inits to WIDTH on load.
     public transient int width = WIDTH;
